@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freya</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      position: relative;
+      max-width: 100%;
+      width: 100%;
+      max-width: 563px;
+    }
+
+    .responsive-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .click-area {
+      position: absolute;
+      display: block;
+      /* Ajuste proporcional com base na imagem original de 563x1517 */
+    }
+
+    /* Área do WhatsApp */
+    .whatsapp {
+      top: 41.5%;
+      left: 72.8%;
+      width: 20%;
+      height: 7.9%;
+    }
+
+    /* Área do Telefone */
+    .phone {
+      top: 41.4%;
+      left: 9%;
+      width: 19.5%;
+      height: 7.9%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="freya.jpg" alt="Freya" class="responsive-img" />
+    <a class="click-area whatsapp"
+       href="https://api.whatsapp.com/send?phone=5511995020917&text=ACHEI%20A%20FREYA,%20PODEMOS%20CONVERSAR?"
+       target="_blank" aria-label="WhatsApp"></a>
+    <a class="click-area phone"
+       href="tel:11995020917" aria-label="Ligar"></a>
+  </div>
+</body>
+</html>
